@@ -1,0 +1,53 @@
+@import (reference) "config";
+@import "normalize";
+
+/* ============================================================
+
+    全局样式
+    
+============================================================ */
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: "Microsoft YaHei UI", "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  background-color: #eee;
+}
+
+div[disabled] {
+  pointer-events: none;
+}
+
+#root {
+  max-width: (@screen)*1px;
+  margin: 0 auto;
+  position: inherit;
+  height: 100%;
+}
+
+.img-lazy {
+  background-color: #dedede;
+}
+
+.img-loaded {
+  background-color: #dedede;
+}
+
+[ng-click]:active {
+  opacity: .4;
+}
+
+input[ng-click]:active {
+  opacity: 1;
+}
+
+/*
+  cbcbcb 列表
+*/
+
+@import "ng-img-crop";
+@import "angular-carousel.min.less";

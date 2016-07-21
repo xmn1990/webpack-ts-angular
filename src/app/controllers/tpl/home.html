@@ -1,0 +1,70 @@
+<div class="header-profile">
+    <a ng-click="home.redirect2EditProfile()" class="header-profile-edit">
+        <img src='/img/ic-person.png' width="100%"/>
+    </a>
+    <a ng-click="route('notifications')" class="header-profile-message">
+        <img src='/img/ic-mail.png' width="100%"/>
+        <span ng-if="::home.shouldBadgeShow" class="header-profile-badge"></span>
+    </a>
+    <div class="header-profile-wrapper header-profile-blue">
+        <div class="header-profile-main">
+            <a class="header-profile-photo header-profile-kph-bg" >
+                <img ng-src="/img/logo.png" class="img-lazy" lazy-img="{{::home.homeVM.headImg}}" width="100%"/>
+            </a>
+            <div class="header-profile-name">
+                {{::home.homeVM.name}}
+            </div>
+            <div class="header-profile-company">
+                {{::home.homeVM.companyName}}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main-nav">
+    <div class="main-nav-core">
+        <a ng-click="route('my-drugs')" class="main-nav-core-wrapper">
+            <div class="main-nav-core-icon">
+                <img src="/img/ic-tablet.png"/>
+            </div>
+            <div class="main-nav-title">
+                我的药品
+            </div>
+        </a>
+    </div>
+    <div class="main-nav-row">
+        <a ng-click="route('my-doctor-list')" class="main-nav-item">
+            <div class="main-nav-icon">
+                <img class="main-nav-ic-drug" src="/img/ic-two-ppl.png"/>
+            </div>
+            <div class="main-nav-title">
+                我的医生
+            </div>
+        </a>
+        <a ng-click="route('my-card')" class="main-nav-item">
+            <div class="main-nav-icon">
+                <img class="main-nav-ic-qr" src="/img/ic-qr.png"/>
+            </div>
+            <div class="main-nav-title">
+                我的名片
+            </div>
+        </a>
+    </div>
+    <div class="main-nav-row1">
+        <a href="#" class="main-nav-item">
+            <div class="main-nav-icon">
+                <img class="main-nav-ic-card" src="/img/ic-card.png"/>
+            </div>
+            <div class="main-nav-title">
+                我的账户
+            </div>
+        </a>
+        <a ng-click="route('unified')" class="main-nav-item">
+            <div class="main-nav-icon">
+                <img class="main-nav-ic-pie" src="/img/ic-pie.png"/>
+            </div>
+            <div class="main-nav-title">
+                统方查询
+            </div>
+        </a>
+    </div>
+</div>

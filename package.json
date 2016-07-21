@@ -1,0 +1,36 @@
+{
+  "name": "webpack-typescipt-xny",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "rimraf dist && webpack --bail --progress --profile",
+    "server": "webpack-dev-server --port 9090 --history-api-fallback --inline --progress --host 0.0.0.0",
+    "test": "karma start",
+    "test-watch": "karma start --auto-watch --no-single-run",
+    "start": "npm run server"
+  },
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-carousel": "^1.0.1",
+    "angular-cookies": "^1.5.7",
+    "angular-route": "^1.5.7",
+    "autoprefixer": "^6.3.7"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "copy-webpack-plugin": "^3.0.1",
+    "css-loader": "^0.23.1",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.22.0",
+    "less": "^2.7.1",
+    "less-loader": "^2.2.3",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-replace": "^1.0.0"
+  },
+  "author": "xny"
+}

@@ -1,0 +1,37 @@
+@import (reference) "../../../public/style/config";
+
+.btn-loader {
+  .padding2(0, 16);
+  font-size: 0;
+  &-spinner {
+    vertical-align: middle;
+    opacity: 0;
+    width: 0;
+    display: inline-block;
+    -webkit-transition: opacity 0.25s, width 0.25s;
+    -webkit-animation: spin 2s linear infinite;
+  }
+
+  &-on {
+    opacity: .6;
+    & > .btn-loader-spinner {
+      opacity: .6;
+      .widthSingle(18);
+      .marginRight(16);
+      display: inline-block;
+    }
+  }
+  &-text {
+    vertical-align: middle;
+    .fontSize(26);
+  }
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
